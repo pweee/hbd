@@ -1,18 +1,35 @@
 <!DOCTYPE HTML>
 <html>
 <head>
+<link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
 <style>
-
-H1, p {
+h3, p {
+  margin: 0;
+  padding: 0;
+  color: white;
   text-align: center;
   font-size: 60px;
-  font-family: Helvetica;
+  font-family: 'Lobster', cursive;
 }
+
+body  {
+    background-image: url("https://image.ibb.co/d1eE1G/hbd.jpg");
+    background-size: cover;
+}
+
 </style>
 </head>
-<body>
 
-<center><h1>Countdown to Shobe's Birthday</h1></center>
+<body>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+<h3> Countdown to Shobe's Birthday </h3>
 <p id="demo"></p>
 
 <script>
@@ -34,8 +51,7 @@ var x = setInterval(function() {
     var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
     // Output the result in an element with id="demo"
-    document.getElementById("demo").innerHTML = hours + "h "
-    + minutes + "m " + seconds + "s ";
+    document.getElementById("demo").innerHTML = hours + "h " + minutes + "m " + seconds + "s ";
 
     // If the count down is over, write some text
     if (distance < 0) {
